@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  // 1rem = 10px
+  font-size: 62.5%;
+  font-family: 'Dosis', sans-serif;
+  color: $primary-color;
+  line-height: 1;
+
+  @include respondsive(lg) {
+    font-size: 55%;
+  }
+
+  @include respondsive(md) {
+    font-size: 45%;
+  }
+}

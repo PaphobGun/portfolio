@@ -1,0 +1,91 @@
+.about {
+  background: $bg-color;
+  padding-top: 6rem;
+
+  display: grid;
+  grid-template-columns: 60% 1fr;
+
+  overflow: hidden;
+
+  @include respondsive(md) {
+    grid-template-columns: 1fr;
+  }
+
+  &__h2 {
+    color: #fff;
+    margin-bottom: 5rem;
+
+    span {
+      color: $secondary-color;
+    }
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    padding: 3rem;
+  }
+
+  &__blog {
+    margin-bottom: 2rem;
+
+    &--h3 {
+      margin-bottom: 2rem;
+    }
+
+    &--p {
+      font-size: 2.5rem;
+      font-weight: 300;
+
+      span {
+        color: $secondary-color;
+        font-size: 2.7rem;
+        font-weight: 400;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        @include ease;
+      }
+
+      a:hover {
+        color: seagreen;
+      }
+    }
+
+    &--p:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__icons {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    align-items: center;
+
+    div {
+      display: inline-block;
+      height: 16rem;
+      width: 16rem;
+      text-align: center;
+
+      @include respondsive(sm) {
+        height: 10.5rem;
+        width: 10.5rem;
+      }
+
+      i {
+        font-size: 10rem;
+        @include respondsive(sm) {
+          font-size: 9rem;
+        }
+      }
+    }
+  }
+}
