@@ -6,6 +6,10 @@
   transition: all 0.6s ease;
 }
 
+@mixin cardHover {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
 // 1em = 16px
 
 @mixin respondsive($breakpoint) {

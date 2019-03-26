@@ -5,6 +5,10 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
 
+  @include respondsive(sm) {
+    background: url(../img/bg-sm.jpg);
+  }
+
   height: 95vh;
 
   &__box {
