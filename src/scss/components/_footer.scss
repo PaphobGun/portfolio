@@ -3,7 +3,49 @@
   padding: 2rem 4rem;
   text-align: center;
 
-  h3 {
-    font-size: 3rem;
+  &__socials {
+    margin-bottom: 2rem;
+
+    a {
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+
+    a:hover {
+      color: $github;
+    }
+  }
+
+  &__text {
+    &--resume {
+      font-size: 3.2rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+
+    &--download {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $primary-color;
+      background: $github;
+      border-radius: 4.5px;
+      padding: 1.5rem 4rem;
+      @include ease;
+    }
+
+    &--download:hover {
+      background: $primary-color;
+      color: $github;
+      transform: translateY(-0.5rem);
+    }
+
+    &--copy {
+      font-size: 3rem;
+      font-weight: 400;
+      margin-top: 1rem;
+    }
   }
 }
