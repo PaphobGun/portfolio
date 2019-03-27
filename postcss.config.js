@@ -1,5 +1,6 @@
+// prettier-ignore
 module.exports = {
-  plugin: {
-    autoprefixer: {}
+  plugins: {
+    "autoprefixer": {}
   }
 };

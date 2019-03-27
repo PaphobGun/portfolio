@@ -1,0 +1,95 @@
+.contact {
+  background: $bg-color;
+  padding: 4rem 4rem;
+
+  @include respondsive(md) {
+    padding: 4rem 2rem;
+  }
+
+  overflow-x: hidden;
+
+  &__head {
+    text-align: center;
+    margin-bottom: 10rem;
+
+    @include respondsive(md) {
+      margin-bottom: 7rem;
+    }
+  }
+
+  &__h2 {
+    span {
+      color: $secondary-color;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include respondsive(md) {
+      grid-template-columns: 1fr;
+    }
+
+    &__info {
+      padding: 0 6rem;
+      font-weight: 300;
+
+      @include respondsive(md) {
+        padding: 0;
+        margin-bottom: 3rem;
+      }
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      i {
+        margin-right: 1rem;
+      }
+
+      div {
+        font-size: 5rem;
+        font-weight: 300;
+        @include ease;
+
+        @include respondsive(sm) {
+          font-size: 3rem;
+        }
+      }
+
+      div:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+
+      div:hover {
+        color: $secondary-color;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        @include ease;
+      }
+
+      a:hover {
+        color: $secondary-color;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        font-size: 50rem;
+
+        @include respondsive(lg) {
+          font-size: 35rem;
+        }
+      }
+    }
+  }
+}

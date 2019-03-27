@@ -5,6 +5,7 @@ const navBtn = document.querySelector('.nav__btn');
 const navList = document.querySelector('.nav__list');
 const nav = document.querySelector('.nav');
 const navProfile = document.querySelector('.nav__profile');
+const year = document.querySelector('.year');
 
 // Init for toggle
 let isShow = false;
@@ -46,3 +47,8 @@ navList.addEventListener('click', e => {
     handleNav('close');
   }
 });
+
+// Render Year
+const date = new Date();
+const years = date.getFullYear();
+year.innerHTML = years;
